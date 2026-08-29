@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self' https://*.supabase.co wss://*.supabase.co; font-src 'self'; object-src 'none'; base-uri 'none'; form-action 'self';" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; worker-src 'self' blob: deskboard-ocr:; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self' deskboard-ocr: https://*.supabase.co wss://*.supabase.co https://api.github.com; font-src 'self'; object-src 'none'; base-uri 'none'; form-action 'self';" />
     <meta name="theme-color" content="#2563eb" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
@@ -12,8 +12,8 @@
     <link rel="icon" href="./icon-256.png" />
     <link rel="apple-touch-icon" href="./icon-256.png" />
     <title>Deskboard</title>
-    <script type="module" crossorigin src="./assets/index-jsBgE9xR.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-C4qxJQ7a.css">
+    <script type="module" crossorigin src="./assets/index-624h82hc.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-8tvEL7zD.css">
   </head>
   <body>
     <div id="root"></div>
