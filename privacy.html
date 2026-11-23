@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Deskboard 개인정보 처리방침</title>
+<link rel="icon" href="./favicon-32.png">
+<style>
+  body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", "Malgun Gothic", sans-serif; color: #1f2328; background: #fafaf9; line-height: 1.7; }
+  main { max-width: 680px; margin: 0 auto; padding: 40px 20px 64px; word-break: keep-all; overflow-wrap: anywhere; }
+  h1 { font-size: 24px; margin: 0 0 4px; }
+  h2 { font-size: 17px; margin: 32px 0 8px; }
+  p, li { font-size: 15px; }
+  ul { padding-left: 20px; }
+  code { font-size: 13.5px; background: #efefed; padding: 1px 5px; border-radius: 4px; }
+  .meta { color: #6b6f76; font-size: 13.5px; margin: 0 0 24px; }
+  a { color: #1d5fd1; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Deskboard 개인정보 처리방침</h1>
+  <p class="meta">시행일 2026년 11월 23일 · <a href="./">Deskboard 웹앱으로</a></p>
+
+  <p>Deskboard는 개인이 자기 과제·시험·일정을 관리하려고 만든 앱입니다. 이 문서는 Deskboard가 구글 계정과 구글 캘린더 정보를 어떻게 다루는지 설명합니다.</p>
+
+  <h2>구글에 요청하는 권한</h2>
+  <p>권한은 <code>https://www.googleapis.com/auth/calendar.app.created</code> 하나만 요청합니다. 이 권한으로는 Deskboard가 만든 보조 캘린더 「Deskboard」와 그 안의 일정만 만들고, 고치고, 지울 수 있습니다. 주 캘린더와 다른 캘린더는 읽지도 쓰지도 않습니다.</p>
+
+  <h2>구글 캘린더로 보내는 정보</h2>
+  <ul>
+    <li>Deskboard에 등록한 과제·시험의 제목, 과목, 마감·시작 시각, 완료 여부</li>
+    <li>일정 설명에 들어가는 LMS 링크와 메모</li>
+  </ul>
+  <p>이 정보는 사용자 본인의 구글 캘린더에만 기록됩니다.</p>
+
+  <h2>저장하는 정보와 위치</h2>
+  <ul>
+    <li><b>구글 연결 토큰</b>: 사용자 PC에만 Windows 계정 암호화(DPAPI)로 저장합니다. 서버나 클라우드로 보내지 않으며, 암호화를 쓸 수 없는 환경이면 저장하지 않습니다.</li>
+    <li><b>동기화 결과</b>: 보낸 개수, 시각, 오류 내용, 「Deskboard」 캘린더 ID, 연결한 구글 계정 주소를 사용자 본인의 Deskboard 클라우드 저장소에 저장합니다. 휴대폰에서 동기화 상태를 보여 주는 데만 씁니다.</li>
+  </ul>
+
+  <h2>제3자 제공</h2>
+  <p>구글에서 받은 정보를 다른 사람이나 회사에 제공하거나 팔지 않고, 광고에 쓰지 않습니다. Deskboard의 Google API 사용과 데이터 전송은 제한적 사용(Limited Use) 요구사항을 포함한 <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API 서비스 사용자 데이터 정책</a>을 따릅니다.</p>
+
+  <h2>연결 끊기와 삭제</h2>
+  <ul>
+    <li>Deskboard PC 앱의 설정 → 구글 캘린더 → <b>연결 해제</b>를 누르면 구글에 토큰 취소를 요청하고 PC에 저장된 토큰을 지웁니다.</li>
+    <li><a href="https://myaccount.google.com/permissions">구글 계정의 서드파티 연결 관리</a>에서도 언제든 권한을 취소할 수 있습니다.</li>
+    <li>이미 만든 「Deskboard」 캘린더와 일정은 사용자의 구글 캘린더에 남습니다. 필요 없으면 구글 캘린더에서 그 캘린더를 지우면 됩니다.</li>
+  </ul>
+
+  <h2>문의</h2>
+  <p>GitHub <a href="https://github.com/changhyun-leek">changhyun-leek</a></p>
+</main>
+</body>
+</html>
